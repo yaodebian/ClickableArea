@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>通过map+area</title>
+  <link rel="stylesheet" href="../css/index3.css">
+</head>
+
+<body>
+  <div id="box">
+    <div>
+      <h2>test1:</h2>
+      <img src="../imgs/test.jpg" width="200" border="0" usemap="#Map" />
+      <map name="Map" id="Map">
+        <area shape="circle" coords="100,100,100" href="http://www.baidu.com" target="_blank" />
+      </map>
+    </div>
+    <br>
+    <div>
+      <h2>test2</h2>
+      <!-- 对整个小说项赋予链接 -->
+      <a class="bookItem" href="https://read.qidian.com/chapter/XOn-GdKVmQjywypLIF-xfQ2/rTEHu3PW9WiaGfXRMrUjdw2" target="_blank">
+        <!-- 单独给封面赋予点击区域 -->
+        <img width="90" height="120px" src="../imgs/novel.jpg" class="book-cover" alt="绝对虚构" usemap="#bookCover">
+        <map name="bookCover" id="bookCover">
+          <area shape="rect" coords="0, 0, 90, 120" href="https://book.qidian.com/info/1013049039#Catalog" alt="绝对虚构"
+            target="_blank">
+        </map>
+        <div class="bookInfo">
+          <!-- 给小说名赋予点击区域 -->
+          <h4 class="bookTitle">
+            <area class="bookTitleArea" href="https://book.qidian.com/info/1013049039#Catalog" target="_blank">
+            绝对领域
+          </h4>
+          <p class="bookDetail">第十章 欢迎来到我的世界</p>
+        </div>
+      </a>
+    </div>
+    <div>
+      <h2>test3</h2>
+      <!-- 对整个小说项赋予链接 -->
+      <a class="bookItem" href="https://read.qidian.com/chapter/XOn-GdKVmQjywypLIF-xfQ2/rTEHu3PW9WiaGfXRMrUjdw2" target="_blank">
+        <!-- 单独给封面赋予点击区域 -->
+        <img width="90" height="120px" src="../imgs/novel.jpg" class="book-cover" alt="绝对虚构" usemap="#bookCover">
+        <map name="bookCover" id="bookCover">
+          <area shape="rect" coords="0, 0, 90, 120" href="https://book.qidian.com/info/1013049039#Catalog" alt="绝对虚构"
+            target="_blank">
+        </map>
+        <div class="bookInfo">
+          <!-- 给小说名赋予点击区域 -->
+          <h4 class="bookTitle">
+            <!-- 用透明图片覆盖小说名，并绑定area -->
+            <img class="bookTitleArea" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              usemap="#mapTitle">
+            绝对领域
+          </h4>
+          <map name="mapTitle" id="mapTitle">
+            <area shape="rect" coords="0, 0, 150, 22" href="https://book.qidian.com/info/1013049039#Catalog" target="_blank">
+          </map>
+          <p class="bookDetail">第十章 欢迎来到我的世界</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

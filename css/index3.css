@@ -1,0 +1,33 @@
+/* 通过map+area */
+.bookItem {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #CC9933;
+}
+
+.bookItem * {
+  margin: 0;
+  padding: 0;
+}
+
+.bookInfo {
+  margin-left: 10px;
+}
+
+.bookTitle {
+  position: relative;
+}
+
+/* 通过设置area的position为absolute，我们可以对area进行css样式的设置 */
+.bookTitleArea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bookDetail {
+  margin-top: 5px;
+}
